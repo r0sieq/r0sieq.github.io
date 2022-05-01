@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-left"></div>
+        <div class="navbar-right">
+            Balance: <span id="balance">5000</span><img src="images/coin.svg" id="coin-icon">
+        </div>
+    </div>
+    <div class="main">
+        <div class="roulette-display">
+        </div>
+        <button class="roulette-button">ROLL</button>
+        <div class="betting">
+            <div class="color-betting">
+                <div class="color-bar red-accent">BET ON RED</div>
+                multiplier <strong>x2</strong>
+                <div class="bet-button red-accent">bet</div>
+                <div class="input-error-container">Invalid value!</div>
+                <input type="number" class="betinput" id="betting-input-red">
+            </div>
+            <div class="color-betting">
+                <div class="color-bar black-accent">BET ON BLACK</div>
+                multiplier <strong>x2</strong>
+                <div class="bet-button black-accent">bet</div>
+                <div class="input-error-container"></div>
+                <input type="number" class="betinput" id="betting-input-black">
+            </div>
+            <div class="color-betting">
+                <div class="color-bar green-accent">BET ON GREEN</div>
+                multiplier <strong>x14</strong>
+                <div class="bet-button green-accent">bet</div>
+                <div class="input-error-container"></div>
+                <input type="number" class="betinput" id="betting-input-green">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
