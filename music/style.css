@@ -35,7 +35,7 @@ body {
 }
 
 .card {
-    background-image: url(/images/bakteria.png);
+    background-image: url(../music/images/bakteria.png);
     background-repeat: no-repeat;
     background-size: 101%;
     position: relative;
