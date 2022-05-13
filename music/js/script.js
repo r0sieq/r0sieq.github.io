@@ -1,6 +1,6 @@
 // SETUP
 import {createFileStream, readFile, removeFileStream, SONGLIST_CLASS} from "./fileStream.js";
-const dataPath = '../text.txt';
+const dataPath = '/music/text.txt';
 createFileStream(dataPath);
 const PREV_BUTTON =                 document.getElementById('button-prev');
 const PAUSE_BUTTON =                document.getElementById('button-pauseplay');
