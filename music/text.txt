@@ -1,0 +1,4 @@
+Bakteria>White2115, Lanek>../music/bakteria.mp3>../images/bakteria.png;
+41922>Trill Pem>../music/41922.mp3>../images/41922.png;
+Robotniczy Trap>Żabson, Young Igi>../music/robotniczytrap.mp3>../images/robotniczytrap.png;
+Loca>Reto, Zetha, Kronkel Dom>../music/loca.mp3>../images/bonapetit.png

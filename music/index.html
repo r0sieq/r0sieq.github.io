@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIC PLAYER</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="./js/script.js" defer></script>
+
+</head>
+<body>
+    <div class="card" id="card">
+        <div class="card-bottom">
+            <div class="card-time-progress-holder" id="song-progress-bar-holder">
+                <div class="card-time-progress" id="song-progress-bar"></div>
+            </div>
+            <div class="card-title">
+                <div class="current-time" id="song-progress">0:00</div>
+                <div class="song-title" id="song-title"></div>
+                <div class="max-time" id="song-duration">4:20</div>
+            </div>
+            <div class="card-media-buttons">
+                <div class="volume option-holder">
+                    <img src="icons/notloop.svg" alt="loop" class="img-icon" id="button-loop">
+                    <div class="img-mask"></div>
+                </div>
+                <div class="buttons option-holder">
+                    <div id="prevbutton" class="prev">
+                        <img src="icons/prev.svg" alt="previous" class="img-icon" id="button-prev">
+                        <div class="img-mask"></div>
+                    </div>
+                    <div id="pausebutton" class="pauseplay">
+                        <img src="icons/play.svg" alt="pause or play" class="img-icon" id="button-pauseplay">
+                        <div class="img-mask"></div>
+                    </div>
+                    <div id="nextbutton" class="next">
+                        <img src="icons/next.svg" alt="next" class="img-icon" id="button-next">
+                        <div class="img-mask"></div>
+                    </div>
+                </div>
+                <div class="loop option-holder" id="volume-all">
+                    <img src="icons/volume.svg" alt="volume" class="img-icon" id="button-volume">
+                    <div class="img-mask"></div>
+                    <div class="volume-adj" id="volume-adj">
+                        <div class="volume-adj-holder" id="volume-adj-holder">
+                            <div class="volume-adj-zip" id="volume-adj-zip"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio src="music/41922.mp3" id="audio-element"></audio>
+</body>
+</html>
