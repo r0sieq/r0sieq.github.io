@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Witaj w aplikacji!</title>
+
+        <!-- update the version number as needed -->
+        <script defer src="/__/firebase/9.9.2/firebase-app-compat.js"></script>
+        <!-- include only the Firebase features as you need -->
+        <script defer src="/__/firebase/9.9.2/firebase-auth-compat.js"></script>
+        <script defer src="/__/firebase/9.9.2/firebase-database-compat.js"></script>
+        <script defer src="/__/firebase/9.9.2/firebase-firestore-compat.js"></script>
+        <script defer src="/__/firebase/9.9.2/firebase-functions-compat.js"></script>
+        <script defer src="/__/firebase/9.9.2/firebase-messaging-compat.js"></script>
+        <script defer src="/__/firebase/9.9.2/firebase-storage-compat.js"></script>
+        <script defer src="/__/firebase/9.9.2/firebase-analytics-compat.js"></script>
+        <script defer src="/__/firebase/9.9.2/firebase-remote-config-compat.js"></script>
+        <script defer src="/__/firebase/9.9.2/firebase-performance-compat.js"></script>
+        <script defer src="/__/firebase/9.9.2/firebase-database.js" type="module"></script>
+        <!-- 
+          initialize the SDK after all desired features are loaded, set useEmulator to false
+          to avoid connecting the SDK to running emulators.
+        -->
+        <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+        <script defer src="./auth.js" type="module"></script>
+        <script defer src="./ui.js" type="module"></script>
+        <script defer src="./framework.js" type="module"></script>
+        <link rel="stylesheet" href="./auth.css">
+        <link rel="stylesheet" href="./main.css">
+
+        <link rel="stylesheet" href="./app.css">
+        <link rel="stylesheet" href="./app-nav.css">
+        <link rel="stylesheet" href="./app-messages.css">
+    </head>
+    <body>
+        <auth-page>
+            <auth-window>
+                <text-content>Zaloguj się!</text-content>
+                <login-method>
+                    <login-method-icon-google></login-method-icon-google>
+                    <login-method-label>Login with Google</login-method-label>
+                </login-method>
+                <login-method>
+                    <login-method-icon-facebook></login-method-icon-facebook>
+                    <login-method-label>Login with Facebook</login-method-label>
+                </login-method>
+            </auth-window>
+        </auth-page>
+        <app-page>
+            <nav-side>
+                <nav-profile>
+                    <nav-profile-picture></nav-profile-picture>
+                    <nav-profile-user>
+                        <nav-profile-username>Roland Czernecki</nav-profile-username>
+                        <nav-profile-uuid>@34d92be2-1aa3</nav-profile-uuid>
+                    </nav-profile-user>
+                    <nav-profile-add></nav-profile-add>
+                </nav-profile>
+                <nav-chatrooms>
+                </nav-chatrooms>
+            </nav-side>
+            <message-box>
+                <message-container>
+                </message-container>
+                <message-input>
+                    <message-input-file type="button"></message-input-file>
+                    <message-input-emoji type="button"></message-input-emoji>
+                    <message-input-text><input type="text" spellcheck="false" placeholder="Napisz wiadomość..."></input></message-input-text>
+                    <message-input-send type="button"></message-input-send>
+                </message-input>
+            </message-box>
+        </app-page>
+    </body>
+</html>

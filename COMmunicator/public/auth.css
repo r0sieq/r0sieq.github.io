@@ -1,0 +1,153 @@
+@keyframes anim-click {
+    50% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes loading {
+    99.9999% {
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+
+auth-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+}
+
+auth-window {
+    position: relative;
+    display: flex;
+    max-width: 500px;
+    min-width: 300px;
+    width: 80vw;
+    border: 1px solid #ddd;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: content-box;
+    padding-bottom: 30px;
+}
+
+auth-window > text-content {
+    color: #333;
+    width: 100%;
+    height: 75px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+login-method {
+    user-select: none;
+    overflow: hidden;
+    font-size: 15px;
+    box-sizing: content-box;
+    box-shadow: 0 0 8px -5px #333;
+    border-radius: calc(55px * 0.5);
+    margin-bottom: 10px;
+    height: 55px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-width: 80%;
+    transition: background-color 200ms ease-in-out, opacity 350ms ease-in-out;
+}
+
+login-method[disabled="false"]:hover {
+    background-color: #eee;
+}
+
+login-method[disabled="true"]{
+    opacity: 0.5;
+}
+
+login-method-icon-google {
+    display: block;
+    height: 55px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2048px-Google_%22G%22_Logo.svg.png);
+    background-position: center center;
+    background-size: 55px;
+    background-repeat: no-repeat;
+}
+
+login-method-icon-facebook {
+    display: block;
+    height: 55px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png);
+    background-position: center center;
+    background-size: 55px;
+    background-repeat: no-repeat;
+}
+
+login-method-label {
+    box-sizing: border-box;
+    display: block;
+    width: calc(100% - 55px);
+    height: 100%;
+    line-height: 55px;
+    padding-inline: 20px;
+}
+
+.animated-click {
+    animation: anim-click;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+}
+
+auth-window loading-container {
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: 8px;
+    background-color: transparent;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+auth-window loading-circle {
+    animation: loading;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: block;
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+}
+
+auth-window loading-circle::after {
+    position: absolute;
+    content: "";
+    background-color: white;
+    width: 50%;
+    height: 50%;
+}
+
+auth-window loading-inner-circle {
+    position: absolute;
+    display: block;
+    background-color: white;
+    width: 80%;
+    height: 80%;
+    transform: translate(12.5%, 12.5%);
+    border-radius: 50%;
+}

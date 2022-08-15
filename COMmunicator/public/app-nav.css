@@ -1,0 +1,149 @@
+nav-side {
+    z-index: 1;
+    display: block;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 0 10px -5px #33333324;
+    min-width: 300px;
+}
+
+nav-profile {
+    position: relative;
+    padding-top: 5px;
+    padding-left: 5px;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 0 18px -5px #33333324;
+    display: flex;
+    flex-direction: row;
+}
+
+nav-profile-picture {
+    display: block;
+    grid-area: aside;
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-image: url(https://i.scdn.co/image/ab6761610000e5eb8c557a6da999d68fec818f79);
+    border-radius: 50%;
+    border: 1px solid #eee;
+}
+
+nav-profile-user {
+    width: calc(100% - 60px);
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+}
+
+nav-profile-username {
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    font-size: 20px;
+    align-items: flex-end;
+}
+
+nav-profile-uuid {
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    font-size: 12px;
+    color: #777;
+    position: relative;
+    width: fit-content;
+}
+
+nav-profile-uuid::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-image: url(./images/icon-copy.svg);
+    background-size: 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    right: -20px;
+    cursor: pointer;
+}
+
+nav-chatrooms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    flex-grow: 100;
+}
+
+nav-chatroom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #ddd;
+    padding-left: 5px;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+}
+
+nav-chatroom:hover {
+    background-color: #eee;
+}
+
+nav-chatroom[active='true']{
+    border-left: 5px solid darkslateblue;
+}
+
+nav-chatroom-profile-picture {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+nav-chatroom-profile-details {
+    display: flex;
+    flex-grow: 100;
+    height: 40px;
+    flex-direction: column;
+    padding-left: 5px;
+}
+
+nav-chatroom-profile-username {
+    display: block;
+    height: 20px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+nav-chatroom-profile-email {
+    display: block;
+    height: 20px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #777;
+}
+
+nav-profile-add {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-size: 20px;
+    background-image: url(./images/icon-plus.svg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}

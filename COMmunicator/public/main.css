@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Forum&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Barlow';
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
