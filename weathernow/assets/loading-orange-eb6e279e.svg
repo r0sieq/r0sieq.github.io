@@ -1,0 +1,7 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+	<title>Nowy projekt</title>
+	<style>
+		.s0 { fill: orangered } 
+	</style>
+	<path id="Kształt 1" fill-rule="evenodd" class="s0" d="m150 300c-83 0-150-67.1-150-150 0-83 67-150 150-150v25c-69.1 0-125 55.9-125 125 0 69.1 55.9 125 125 125 69.1 0 125-55.9 125-125h25c0 82.9-67.1 150-150 150z"/>
+</svg>
